@@ -1,0 +1,345 @@
+/* --------------------------------------------------
+   CAMPUSAI GENEL
+-------------------------------------------------- */
+
+.stApp {
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(72, 99, 255, 0.16),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            rgba(0, 201, 167, 0.10),
+            transparent 28%
+        ),
+        #0d1117;
+    color: #f4f7fb;
+}
+
+.block-container {
+    max-width: 1200px;
+    padding-top: 1.8rem;
+    padding-bottom: 4rem;
+}
+
+
+/* --------------------------------------------------
+   SIDEBAR
+-------------------------------------------------- */
+
+section[data-testid="stSidebar"] {
+    background:
+        linear-gradient(
+            180deg,
+            #171b24 0%,
+            #11141b 100%
+        );
+    border-right: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+section[data-testid="stSidebar"] > div {
+    padding-top: 1.2rem;
+}
+
+
+/* --------------------------------------------------
+   BAŞLIKLAR
+-------------------------------------------------- */
+
+h1 {
+    font-size: 2.45rem !important;
+    font-weight: 850 !important;
+    letter-spacing: -0.045em;
+}
+
+h2 {
+    font-weight: 800 !important;
+    letter-spacing: -0.035em;
+}
+
+h3 {
+    font-weight: 720 !important;
+    letter-spacing: -0.02em;
+}
+
+
+/* --------------------------------------------------
+   DASHBOARD HERO
+-------------------------------------------------- */
+
+.dashboard-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.6rem;
+    margin: 0.5rem 0 1.6rem;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(79, 70, 229, 0.24),
+            rgba(15, 23, 42, 0.72)
+        );
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.dashboard-hero h2 {
+    margin: 0.2rem 0 0.5rem !important;
+    font-size: 2rem !important;
+}
+
+.dashboard-hero p {
+    margin: 0;
+    color: rgba(244, 247, 251, 0.74);
+    line-height: 1.6;
+}
+
+.dashboard-eyebrow {
+    color: #a5b4fc !important;
+    font-size: 0.78rem;
+    font-weight: 750;
+    letter-spacing: 0.13em;
+}
+
+.dashboard-hero-badge {
+    flex-shrink: 0;
+    padding: 0.65rem 0.95rem;
+    border-radius: 999px;
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(52, 211, 153, 0.28);
+    color: #a7f3d0;
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+
+/* --------------------------------------------------
+   İSTATİSTİK KARTLARI
+-------------------------------------------------- */
+
+.dashboard-stat-card {
+    min-height: 155px;
+    padding: 1.15rem;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.075);
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.025)
+        );
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.15);
+    transition:
+        transform 0.16s ease,
+        border-color 0.16s ease;
+}
+
+.dashboard-stat-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(129, 140, 248, 0.35);
+}
+
+.dashboard-stat-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.dashboard-stat-title {
+    margin: 0;
+    color: rgba(244, 247, 251, 0.64);
+    font-size: 0.86rem;
+    font-weight: 650;
+}
+
+.dashboard-stat-value {
+    margin: 0.25rem 0 !important;
+    font-size: 1.9rem !important;
+    font-weight: 820 !important;
+}
+
+.dashboard-stat-description {
+    margin: 0;
+    color: rgba(244, 247, 251, 0.48);
+    font-size: 0.78rem;
+}
+
+
+/* --------------------------------------------------
+   BİLGİ KARTLARI
+-------------------------------------------------- */
+
+.dashboard-info-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-height: 135px;
+    padding: 1.2rem;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.075);
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.dashboard-info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: rgba(99, 102, 241, 0.15);
+    font-size: 1.45rem;
+}
+
+.dashboard-info-label {
+    margin: 0;
+    color: #a5b4fc;
+    font-size: 0.78rem;
+    font-weight: 750;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.dashboard-info-card h3 {
+    margin: 0.25rem 0 !important;
+}
+
+.dashboard-info-card p:last-child {
+    margin: 0;
+    color: rgba(244, 247, 251, 0.52);
+    font-size: 0.82rem;
+}
+
+
+/* --------------------------------------------------
+   SON SOHBETLER
+-------------------------------------------------- */
+
+.recent-chat-title {
+    display: flex;
+    align-items: center;
+    min-height: 42px;
+    padding: 0.65rem 0.8rem;
+    border-radius: 11px;
+    background: rgba(255, 255, 255, 0.032);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    font-weight: 650;
+}
+
+
+/* --------------------------------------------------
+   BUTONLAR
+-------------------------------------------------- */
+
+.stButton > button,
+.stDownloadButton > button {
+    min-height: 42px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    background: rgba(255, 255, 255, 0.045);
+    color: #f4f7fb;
+    font-weight: 650;
+    transition:
+        transform 0.15s ease,
+        border-color 0.15s ease,
+        background 0.15s ease;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    transform: translateY(-1px);
+    border-color: rgba(129, 140, 248, 0.45);
+    background: rgba(99, 102, 241, 0.15);
+    color: #ffffff;
+}
+
+
+/* --------------------------------------------------
+   INPUT / SELECT
+-------------------------------------------------- */
+
+div[data-baseweb="input"] > div,
+div[data-baseweb="textarea"] > div,
+div[data-baseweb="select"] > div {
+    border-radius: 12px !important;
+    background: rgba(255, 255, 255, 0.045) !important;
+    border-color: rgba(255, 255, 255, 0.085) !important;
+}
+
+
+/* --------------------------------------------------
+   CHAT
+-------------------------------------------------- */
+
+div[data-testid="stChatMessage"] {
+    border-radius: 18px;
+    padding: 1rem 1.1rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    background: rgba(255, 255, 255, 0.035);
+}
+
+div[data-testid="stChatInput"] {
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    background: rgba(13, 17, 23, 0.92);
+}
+
+
+/* --------------------------------------------------
+   FILE UPLOADER / ALERT / EXPANDER
+-------------------------------------------------- */
+
+section[data-testid="stFileUploaderDropzone"] {
+    border-radius: 16px;
+    border: 1px dashed rgba(129, 140, 248, 0.5);
+    background: rgba(99, 102, 241, 0.07);
+}
+
+div[data-testid="stAlert"],
+details[data-testid="stExpander"] {
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+
+/* --------------------------------------------------
+   AYIRICI
+-------------------------------------------------- */
+
+hr {
+    border-color: rgba(255, 255, 255, 0.075) !important;
+}
+
+
+/* --------------------------------------------------
+   MOBİL
+-------------------------------------------------- */
+
+@media (max-width: 900px) {
+    .dashboard-hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dashboard-hero-badge {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+}
